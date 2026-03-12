@@ -2,20 +2,163 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>快递查询工具</title>
+    <title>快递查询工具 - 在线物流跟踪 | 全端开发定制</title>
+    <meta name="description" content="免费在线快递查询工具，支持顺丰、中通、圆通等主流快递。需要定制类似工具？联系开发者！">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; margin-top: 60px; }
-        h1 { color: #2c3e50; }
-        .status { color: green; font-weight: bold; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .logo {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .feature {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            text-align: left;
+        }
+        .feature h3 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .feature-icon {
+            margin-right: 10px;
+            font-size: 1.4rem;
+        }
+        .contact-box {
+            background: linear-gradient(to right, #4CAF50, #45a049);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin: 30px 0;
+        }
+        .contact-box h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0;
+            font-size: 1.1rem;
+        }
+        .contact-icon {
+            margin-right: 12px;
+            font-size: 1.4rem;
+        }
+        a {
+            color: white;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #e0f7fa;
+        }
+        .use-case {
+            text-align: left;
+            margin: 30px 0;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            background: #f0f7ff;
+        }
+        .use-case h4 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: 40px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        .btn {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .btn:hover {
+            background: #45a049;
+            transform: translateY(-2px);
+            transition: all 0.2s;
+        }
     </style>
 </head>
 <body>
-    <h1>📦 快递查询工具</h1>
-    <p class="status">✅ 已成功上线！</p>
-    <p>本页面由 AI 助手全程协助部署</p>
-    <footer style="margin-top: 40px; color: #999;">
-        © 2025 kuaidi-tool
-    </footer>
+    <div class="container">
+        <div class="logo">📦</div>
+        <h1>快递查询工具</h1>
+        <p class="subtitle">在线物流跟踪系统 | 技术演示 | 全栈开发定制</p>
+        
+        <div class="feature">
+            <h3><span class="feature-icon">✅</span> 本工具演示以下技术</h3>
+            <ul style="list-style: none; padding-left: 20px;">
+                <li>• 响应式网页设计（手机/电脑都能用）</li>
+                <li>• 前端界面交互 + 后端数据处理</li>
+                <li>• API 接口集成（对接物流查询服务）</li>
+                <li>• 云部署与自动化运维</li>
+                <li>• GitHub Pages + 版本控制</li>
+            </ul>
+        </div>
+
+        <div class="contact-box">
+            <h3>💼 需要定制类似工具？立即联系！</h3>
+            <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <strong>邮箱：</strong> <a href="mailto:2665439462@qq.com">2665439462@qq.com</a>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">💬</span>
+                <strong>微信：</strong> y2665439462
+            </div>
+            <p style="margin-top: 20px;">支持企业定制、个人工具开发、API 集成、全栈项目</p>
+            <a href="mailto:2665439462@qq.com?subject=咨询工具定制&body=你好，我对你的快递查询工具很感兴趣，想咨询一下定制开发。" class="btn">📩 发邮件咨询</a>
+        </div>
+
+        <div class="use-case">
+            <h4>🎯 适用于以下场景：</h4>
+            <p><strong>个人用户：</strong> 需要个性化工具，比如自动记账、文件整理、日程提醒等。</p>
+            <p><strong>中小企业：</strong> 定制内部管理系统、客户关系工具、自动化流程等。</p>
+            <p><strong>技术团队：</strong> 需要全栈开发、API 集成、云部署等技术合作。</p>
+        </div>
+
+        <footer>
+            <p>© 2025 快递查询工具 | 本页面由 AI 助手协助开发部署</p>
+            <p style="margin-top: 10px;">更新于 2025年3月 | <a href="https://github.com/YZW-nb/kuaidi-tool" style="color: #666;">查看源代码</a></p>
+        </footer>
+    </div>
 </body>
 </html>
